@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Baju Second | Fashion Hemat Berkualitas</title>
+  <meta name="description" content="Temukan baju second berkualitas dengan harga terbaik. Tampil stylish, eco-friendly, dan hemat di Toko Baju Second.">
+  <meta name="keywords" content="baju second, fashion second, thrift shop, baju murah, pakaian bekas branded">
+  <meta name="author" content="Toko Baju Second">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #007BFF;
+      --bg-color: #ffffff;
+      --text-color: #333;
+      --secondary-bg: #f9f9f9;
+    }
+
+    [data-theme="dark"] {
+      --primary-color: #66b2ff;
+      --bg-color: #121212;
+      --text-color: #f1f1f1;
+      --secondary-bg: #1e1e1e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background: var(--bg-color);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: var(--primary-color);
+      color: #fff;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background: var(--primary-color);
+      border-radius: 5px;
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background: var(--bg-color);
+      position: absolute;
+      top: 80px;
+      right: 20px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      border-radius: 10px;
+    }
+
+    .mobile-menu a {
+      padding: 10px 0;
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .btn-primary {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: var(--primary-color);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: #0056b3;
+    }
+
+    .products {
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: var(--secondary-bg);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      loading: lazy;
+    }
+
+    .contact {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a {
+      color: var(--primary-color);
+      font-size: 2rem;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: var(--text-color);
+      margin-top: 40px;
+    }
+
+    .toggle-darkmode {
+      cursor: pointer;
+      font-size: 1.2rem;
+      background: none;
+      border: none;
+      color: var(--primary-color);
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+      nav {
+        display: none;
+      }
+      .mobile-menu.active {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="https://i.postimg.cc/RFrJy8fJ/Teks-paragraf-Anda.png" alt="Logo" loading="lazy">
+  </div>
+
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#produk">Produk</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#kontak">Kontak</a>
+    <button onclick="toggleDarkMode()" class="toggle-darkmode">🌓</button>
+  </nav>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#beranda">Beranda</a>
+    <a href="#produk">Produk</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#kontak">Kontak</a>
+    <button onclick="toggleDarkMode()" class="toggle-darkmode">🌓</button>
+  </div>
+</header>
+
+<section class="hero" id="beranda" data-aos="fade-up">
+  <h1>Baju Second Berkualitas, Harga Bersahabat</h1>
+  <p>Tampil keren, tetap hemat! Temukan koleksi fashion second terbaik hanya di Toko Baju Second.</p>
+  <a href="#produk" class="btn-primary">Belanja Sekarang</a>
+</section>
+
+<section class="products" id="produk" data-aos="fade-up">
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x400" alt="Produk 1">
+    <h3>Jaket Vintage</h3>
+    <p>Rp 120.000</p>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x400" alt="Produk 2">
+    <h3>Celana Retro</h3>
+    <p>Rp 90.000</p>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x400" alt="Produk 3">
+    <h3>Kemeja Kasual</h3>
+    <p>Rp 70.000</p>
+  </div>
+</section>
+
+<section class="hero" id="tentang" data-aos="fade-up">
+  <h1>Tentang Kami</h1>
+  <p>Kami menghadirkan pilihan fashion second hand terbaik untuk Anda yang ingin tampil gaya, hemat, dan mendukung gaya hidup berkelanjutan.</p>
+</section>
+
+<section class="contact" id="kontak" data-aos="fade-up">
+  <h1>Hubungi Kami</h1>
+  <div class="social-icons">
+    <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://instagram.com/tokobajusecond" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:tokobajusecond@email.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    <a href="https://tiktok.com/@tokobajusecond" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://facebook.com/tokobajusecond" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://shopee.co.id/tokobajusecond" target="_blank"><i class="fas fa-store"></i></a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Toko Baju Second. All Rights Reserved.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('active');
+  }
+
+  function toggleDarkMode() {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    document.documentElement.setAttribute("data-theme", currentTheme === "dark" ? "light" : "dark");
+  }
+</script>
+</body>
+</html>
