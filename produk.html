@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Produk | Toko Baju Second</title>
+  <meta name="description" content="Katalog produk baju second berkualitas dan hemat.">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #5B5BD6;
+      --hover-color: #6F86FF;
+      --bg-color: #f8f9fc;
+      --text-color: #333;
+      --secondary-bg: #ffffff;
+    }
+
+    [data-theme="dark"] {
+      --primary-color: #9aa4ff;
+      --hover-color: #b3bfff;
+      --bg-color: #121212;
+      --text-color: #f1f1f1;
+      --secondary-bg: #1e1e1e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background: var(--secondary-bg);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .toggle-darkmode {
+      cursor: pointer;
+      font-size: 1.2rem;
+      background: none;
+      border: none;
+      color: var(--primary-color);
+    }
+
+    .main-title {
+      text-align: center;
+      margin: 40px 20px 20px;
+    }
+
+    .main-title h1 {
+      font-size: 2.2rem;
+      color: var(--primary-color);
+    }
+
+    .products {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: var(--secondary-bg);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .product-card h3 {
+      margin: 15px 10px 5px;
+      font-size: 1.1rem;
+    }
+
+    .product-card p {
+      margin-bottom: 15px;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      color: var(--text-color);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="tsclothing.png" alt="Toko Baju Second">
+  </div>
+  <button onclick="toggleDarkMode()" class="toggle-darkmode">🌓</button>
+</header>
+
+<div class="main-title" data-aos="fade-up">
+  <h1>Katalog Produk Kami</h1>
+  <p>Temukan pilihan baju second berkualitas & hemat</p>
+</div>
+
+<section class="products" data-aos="fade-up">
+  <div class="product-card">
+    <img src="https://i.postimg.cc/j5ysPT6S/rhthththt.jpg" alt="Jaket Vintage">
+    <h3>Jaket Vintage</h3>
+    <p>Rp 120.000</p>
+  </div>
+  <div class="product-card">
+    <img src="https://i.postimg.cc/kGcqYypr/7787kjuuju.jpg" alt="Celana Retro">
+    <h3>Celana Retro</h3>
+    <p>Rp 90.000</p>
+  </div>
+  <div class="product-card">
+    <img src="https://i.postimg.cc/65W92D8B/75363463.jpg" alt="Kemeja Kasual">
+    <h3>Kemeja Kasual</h3>
+    <p>Rp 70.000</p>
+  </div>
+  <div class="product-card">
+    <img src="https://i.postimg.cc/3wPsmTgX/blazer-wanita.jpg" alt="Blazer Wanita">
+    <h3>Blazer Wanita</h3>
+    <p>Rp 150.000</p>
+  </div>
+  <div class="product-card">
+    <img src="https://i.postimg.cc/8CNhKWw5/kaos-band.jpg" alt="Kaos Band">
+    <h3>Kaos Band</h3>
+    <p>Rp 65.000</p>
+  </div>
+  <div class="product-card">
+    <img src="https://i.postimg.cc/8PpJDJ8c/crewneck.jpg" alt="Crewneck Polos">
+    <h3>Crewneck Polos</h3>
+    <p>Rp 85.000</p>
+  </div>
+  <div class="product-card">
+    <img src="https://i.postimg.cc/mr4WpX13/hoodie-streetwear.jpg" alt="Hoodie Streetwear">
+    <h3>Hoodie Streetwear</h3>
+    <p>Rp 130.000</p>
+  </div>
+  <div class="product-card">
+    <img src="https://i.postimg.cc/3RC7CDfj/celana-cargo.jpg" alt="Celana Cargo">
+    <h3>Celana Cargo</h3>
+    <p>Rp 95.000</p>
+  </div>
+  <div class="product-card">
+    <img src="https://i.postimg.cc/kGBpxG2g/denim-jacket.jpg" alt="Denim Jacket">
+    <h3>Denim Jacket</h3>
+    <p>Rp 140.000</p>
+  </div>
+  <div class="product-card">
+    <img src="https://i.postimg.cc/KjyPWSPZ/topi-vintage.jpg" alt="Topi Vintage">
+    <h3>Topi Vintage</h3>
+    <p>Rp 50.000</p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Toko Baju Second. All Rights Reserved.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  function toggleDarkMode() {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    document.documentElement.setAttribute("data-theme", currentTheme === "dark" ? "light" : "dark");
+  }
+</script>
+
+</body>
+</html>
