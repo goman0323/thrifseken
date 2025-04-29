@@ -2,11 +2,15 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi Toko Baju Second untuk pertanyaan, pemesanan, atau kerjasama. Dapatkan layanan cepat melalui WhatsApp, email, atau kunjungi toko kami di Bandung.">
+  <meta name="keywords" content="Toko Baju Second, kontak baju bekas, hubungi kami, WA toko baju, lokasi toko baju second, email bajusecond">
+  <meta name="author" content="Toko Baju Second">
   <title>Kontak Kami | Toko Baju Second</title>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="favicon.png" type="image/x-icon">
   <style>
     :root {
       --primary-color: #5B5BD6;
@@ -31,6 +35,7 @@
       font-family: 'Plus Jakarta Sans', sans-serif;
       background: var(--bg-color);
       color: var(--text-color);
+      line-height: 1.6;
     }
     header {
       background: var(--secondary-bg);
@@ -79,7 +84,8 @@
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
-    .contact-info h3, .contact-form h3 {
+    .contact-info h2, .contact-form h2 {
+      font-size: 1.4rem;
       margin-bottom: 15px;
     }
     .info-item {
@@ -136,23 +142,25 @@
 
 <header>
   <div class="logo">
-    <img src="tsclothing.png" alt="Toko Baju Second" />
+    <a href="index.html" aria-label="Beranda Toko Baju Second">
+      <img src="tsclothing.png" alt="Logo Toko Baju Second">
+    </a>
   </div>
-  <button onclick="toggleDarkMode()" class="toggle-darkmode">🌓</button>
+  <button onclick="toggleDarkMode()" class="toggle-darkmode" aria-label="Ganti tema">🌓</button>
 </header>
 
-<div class="container" data-aos="fade-up">
-  <h1>Kontak Kami</h1>
+<main class="container" data-aos="fade-up">
+  <h1>Kontak Toko Baju Second</h1>
   <div class="contact-grid">
-    <div class="contact-info">
-      <h3>Hubungi Kami</h3>
+    <section class="contact-info">
+      <h2>Hubungi Kami</h2>
       <div class="info-item">
         <i class="fas fa-map-marker-alt"></i>
         <span>Jl. Belanja Hemat No. 22, Bandung</span>
       </div>
       <div class="info-item">
         <i class="fab fa-whatsapp"></i>
-        <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a>
+        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">+62 812-3456-7890</a>
       </div>
       <div class="info-item">
         <i class="fas fa-envelope"></i>
@@ -160,25 +168,25 @@
       </div>
       <div class="info-item">
         <i class="fab fa-instagram"></i>
-        <a href="https://instagram.com/bajusecond.id" target="_blank">@bajusecond.id</a>
+        <a href="https://instagram.com/bajusecond.id" target="_blank" rel="noopener">@bajusecond.id</a>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen="" loading="lazy"></iframe>
-    </div>
+      <iframe src="https://www.google.com/maps/embed?..." allowfullscreen loading="lazy"></iframe>
+    </section>
 
-    <div class="contact-form">
-      <h3>Kirim Pesan</h3>
+    <section class="contact-form">
+      <h2>Kirim Pesan</h2>
       <form action="#" method="POST">
-        <input type="text" name="nama" placeholder="Nama Anda" required>
-        <input type="email" name="email" placeholder="Email Anda" required>
-        <textarea name="pesan" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+        <input type="text" name="nama" placeholder="Nama Anda" required aria-label="Nama">
+        <input type="email" name="email" placeholder="Email Anda" required aria-label="Email">
+        <textarea name="pesan" rows="5" placeholder="Tulis pesan Anda..." required aria-label="Pesan"></textarea>
         <button type="submit">Kirim</button>
       </form>
-    </div>
+    </section>
   </div>
-</div>
+</main>
 
 <footer>
-  &copy; 2025 Toko Baju Second. All rights reserved.
+  &copy; 2025 Toko Baju Second. Seluruh hak cipta dilindungi.
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
