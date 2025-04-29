@@ -51,6 +51,8 @@
       position: sticky;
       top: 0;
       z-index: 1000;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     .logo img {
@@ -63,6 +65,26 @@
       background: none;
       border: none;
       color: var(--primary-color);
+    }
+
+    #searchInput {
+      padding: 8px 12px;
+      border: 1px solid var(--primary-color);
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+      font-size: 0.9rem;
+      background: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    #searchInput::placeholder {
+      color: #aaa;
+    }
+
+    #searchInput:focus {
+      border-color: var(--hover-color);
+      box-shadow: 0 0 0 2px rgba(91, 91, 214, 0.2);
     }
 
     .main-title {
@@ -133,6 +155,7 @@
   <div class="logo">
     <img src="tsclothing.png" alt="Logo Toko Baju Second">
   </div>
+  <input type="text" id="searchInput" placeholder="Cari produk..." aria-label="Cari produk">
   <button onclick="toggleDarkMode()" class="toggle-darkmode" aria-label="Toggle Dark Mode">🌓</button>
 </header>
 
@@ -207,6 +230,16 @@
     const current = root.getAttribute('data-theme');
     root.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
   }
+
+  document.getElementById('searchInput').addEventListener('input', function () {
+    const keyword = this.value.toLowerCase();
+    const cards = document.querySelectorAll('.product-card');
+
+    cards.forEach(card => {
+      const title = card.querySelector('h3').textContent.toLowerCase();
+      card.style.display = title.includes(keyword) ? 'block' : 'none';
+    });
+  });
 </script>
 
 </body>
