@@ -5,4 +5,4 @@ Disallow: /js/
 Disallow: /images/
 Allow: /
 
-Sitemap: https://goman0323.github.io/thrifseken/sitemap.xml
+Sitemap: https://thrifseken.com/sitemap.xml
