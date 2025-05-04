@@ -33,38 +33,26 @@ Kami percaya bahwa tampil gaya tidak harus mahal dan mendukung gaya hidup berkel
 
 ---
 
-## 🚀 Teknologi yang Digunakan
+## 🛠️ Teknologi
 
-- **Frontend**: HTML5, CSS3
-- **Backend**: Python Flask
-- **Hosting**: Replit / GitHub Pages
-
+- HTML5
+- CSS3
+- JavaScript (DOM interaktif)
+- GitHub Pages (Hosting gratis)
 ---
 
-thrifseken/
-├── app.py
-├── templates/
-│   ├── index.html
-│   ├── produk.html
-│   ├── tentang.html
-│   └── kontak.html
-├── static/
-│   └── style.css
-└── README.md
+📁 thrifseken/
+├── index.html
+├── produk/index.html
+├── tentang/index.html
+├── kontak/index.html
+├── style.css
+└── tsclothing.png
 ---
 
 🔗 Tautan Penting
 Website: https://thrifseken.com
 
-WhatsApp: Hubungi Kami
+- WhatsApp: [Klik untuk Chat](https://wa.me/628xxxxx)
+- Instagram: [@thrifseken](https://instagram.com/thrifseken)
 ---
-
-📄 Lisensi
-Proyek ini dilisensikan di bawah MIT License.
-
-## ⚙️ Cara Menjalankan Proyek
-
-1. **Klon repositori**:
-   ```bash
-   git clone https://github.com/username/thrifseken.git
-   cd thrifseken
