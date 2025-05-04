@@ -29,7 +29,7 @@ Kami percaya bahwa tampil gaya tidak harus mahal dan mendukung gaya hidup berkel
 
 ## 🖼️ Preview
 
-![Preview Website]([https://thrifseken.com/images/preview.png](https://i.postimg.cc/Hsznxgr5/THRIFSEKEN-2.png))
+![Preview Website](https://i.postimg.cc/Hsznxgr5/THRIFSEKEN-2.png)
 
 ---
 
