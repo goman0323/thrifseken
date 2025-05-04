@@ -1,56 +1,70 @@
-<h1 align="center">🛍️ Thrifseken</h1>
+<h1 align="center">🧥 Thrifseken</h1>
 <p align="center">
-  <b>Website Toko Online Baju Thrift - Clean & Simple Design</b><br>
-  Dibuat dengan ❤️ menggunakan HTML, CSS, dan Flask (Python)
-</p>
-
-<p align="center">
-  <a href="https://thrifseken.com" target="_blank">🌐 Lihat Website</a> •
-  <a href="#fitur">✨ Fitur</a> •
-  <a href="#preview">📷 Preview</a> •
-  <a href="#cara-instalasi">⚙️ Instalasi</a> •
-  <a href="#struktur-proyek">📁 Struktur</a>
+  <strong>Toko Fashion Second Berkualitas & Hemat</strong><br>
+  <em>Website resmi: <a href="https://thrifseken.com">thrifseken.com</a></em>
 </p>
 
 ---
 
-## ✨ Fitur
+## 🛍️ Tentang Thrifseken
 
-- Tampilan responsive dan bersih
-- Halaman produk tanpa `.html` di URL (lebih SEO-friendly)
-- Navigasi cepat: Beranda, Produk, Tentang, Kontak
-- Siap untuk dikembangkan jadi toko online full
+**Thrifseken** adalah platform daring yang menyediakan berbagai pilihan pakaian second hand berkualitas dengan harga terjangkau. Kami menawarkan koleksi seperti:
 
----
+- **Jaket Vintage**: Rp 120.000
+- **Celana Retro**: Rp 90.000
+- **Kemeja Kasual**: Rp 70.000
 
-## 📷 Preview
-
-![preview](https://your-image-link-preview.png)
-> *Contoh tampilan halaman utama Thrifseken*
+Kami percaya bahwa tampil gaya tidak harus mahal dan mendukung gaya hidup berkelanjutan.
 
 ---
 
-## 🔗 Demo Langsung
-👉 [https://thrifseken.com](https://thrifseken.com)
+## 🌐 Fitur Website
+
+- **Navigasi Mudah**: Halaman Beranda, Produk, Tentang Kami, dan Kontak.
+- **Desain Responsif**: Tampilan yang optimal di berbagai perangkat.
+- **Informasi Produk**: Detail dan harga produk yang jelas.
+- **Kontak Langsung**: Terhubung langsung melalui WhatsApp.
 
 ---
 
-## 📚 Kata Kunci (SEO)
-`toko online`, `baju thrift`, `thrift shop`, `website fashion`, `python flask web`, `online store`, `simple responsive website`, `html css flask`, `thrifseken.com`, `baju bekas branded`, `fashion murah`
+## 🖼️ Preview
+
+![Preview Website](https://thrifseken.com/images/preview.png)
 
 ---
 
-## ⚙️ Cara Instalasi
+## 🚀 Teknologi yang Digunakan
 
-```bash
-# 1. Clone project
-git clone https://github.com/username/thrifseken.git
+- **Frontend**: HTML5, CSS3
+- **Backend**: Python Flask
+- **Hosting**: Replit / GitHub Pages
 
-# 2. Masuk ke folder
-cd thrifseken
+---
 
-# 3. Install Flask
-pip install flask
+thrifseken/
+├── app.py
+├── templates/
+│   ├── index.html
+│   ├── produk.html
+│   ├── tentang.html
+│   └── kontak.html
+├── static/
+│   └── style.css
+└── README.md
+---
 
-# 4. Jalankan server
-python app.py
+🔗 Tautan Penting
+Website: https://thrifseken.com
+
+WhatsApp: Hubungi Kami
+---
+
+📄 Lisensi
+Proyek ini dilisensikan di bawah MIT License.
+
+## ⚙️ Cara Menjalankan Proyek
+
+1. **Klon repositori**:
+   ```bash
+   git clone https://github.com/username/thrifseken.git
+   cd thrifseken
