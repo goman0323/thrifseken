@@ -109,23 +109,13 @@
   &copy; 2025 Thrifseken. All Rights Reserved.
 </footer>
 
-<!-- Tombol WhatsApp -->
 <a href="https://wa.me/6281234567890" target="_blank" class="whatsapp-btn">
   <i class="fab fa-whatsapp"></i>
 </a>
 
+
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
+<script src="js/beranda.js" defer></script>
 
-  function toggleMenu() {
-    document.getElementById('mobileMenu').classList.toggle('active');
-  }
-
-  function toggleDarkMode() {
-    const currentTheme = document.documentElement.getAttribute("data-theme");
-    document.documentElement.setAttribute("data-theme", currentTheme === "dark" ? "light" : "dark");
-  }
-</script>
 </body>
 </html>
