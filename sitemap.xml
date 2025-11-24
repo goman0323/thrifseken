@@ -4,7 +4,7 @@
   <!-- Beranda -->
   <url>
     <loc>https://thrifseken.com/</loc>
-    <lastmod>2025-09-19</lastmod>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Produk -->
   <url>
     <loc>https://thrifseken.com/produk</loc>
-    <lastmod>2025-09-19</lastmod>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- Tentang -->
   <url>
     <loc>https://thrifseken.com/tentang</loc>
-    <lastmod>2025-09-19</lastmod>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -28,7 +28,7 @@
   <!-- Kontak -->
   <url>
     <loc>https://thrifseken.com/kontak</loc>
-    <lastmod>2025-09-19</lastmod>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
