@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/29623505/README.md)
+[README.md](https://github.com/user-attachments/files/29623554/README.md)
 <h1 align="center">🧥 Thrifseken</h1>
 <p align="center">
   <strong>Toko Fashion Second Berkualitas & Hemat</strong><br>
