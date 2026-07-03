@@ -3,271 +3,192 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Katalog Produk | Thrifseken</title>
-  <meta name="description" content="Temukan berbagai pilihan baju second berkualitas, hemat, dan stylish di Thrifseken. Mulai dari jaket vintage hingga topi keren, semua ada di sini!">
-  <meta name="keywords" content="baju second, toko baju bekas, fashion vintage, jaket second, celana retro, blazer wanita, hoodie streetwear">
+
+  <title>Katalog Produk Thrifseken | Baju Second Medan</title>
+  <meta name="description" content="Lihat katalog produk Thrifseken. Temukan jaket vintage, celana retro, kemeja kasual, hoodie, kaos, dan fashion second berkualitas di Medan.">
   <meta name="author" content="Thrifseken">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://thrifseken.com/produk/">
   <link rel="icon" href="/favicon.png" type="image/png">
 
-  <style>
-    :root {
-      --primary-color: #5B5BD6;
-      --hover-color: #6F86FF;
-      --bg-color: #f8f9fc;
-      --text-color: #333;
-      --secondary-bg: #ffffff;
-    }
+  <meta property="og:title" content="Katalog Produk Thrifseken">
+  <meta property="og:description" content="Pilihan baju second, thrift, dan fashion second berkualitas dari Thrifseken.">
+  <meta property="og:url" content="https://thrifseken.com/produk/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Thrifseken">
 
-    [data-theme="dark"] {
-      --primary-color: #9aa4ff;
-      --hover-color: #b3bfff;
-      --bg-color: #121212;
-      --text-color: #f1f1f1;
-      --secondary-bg: #1e1e1e;
-    }
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background: var(--bg-color);
-      color: var(--text-color);
-    }
-
-    header {
-      background: var(--secondary-bg);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .logo img {
-      height: 50px;
-    }
-
-    .toggle-darkmode {
-      cursor: pointer;
-      font-size: 1.2rem;
-      background: none;
-      border: none;
-      color: var(--primary-color);
-    }
-
-    #searchInput {
-      padding: 8px 12px;
-      border: 1px solid var(--primary-color);
-      border-radius: 8px;
-      outline: none;
-      transition: 0.3s;
-      font-size: 0.9rem;
-      background: var(--bg-color);
-      color: var(--text-color);
-    }
-
-    #searchInput::placeholder {
-      color: #aaa;
-    }
-
-    #searchInput:focus {
-      border-color: var(--hover-color);
-      box-shadow: 0 0 0 2px rgba(91, 91, 214, 0.2);
-    }
-
-    .main-title {
-      text-align: center;
-      margin: 40px 20px 20px;
-    }
-
-    .main-title h1 {
-      font-size: 2.2rem;
-      color: var(--primary-color);
-    }
-
-    .main-title p {
-      font-size: 1rem;
-      margin-top: 10px;
-    }
-
-    .products {
-      padding: 40px 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .product-card {
-      background: var(--secondary-bg);
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      text-align: center;
-      transition: 0.3s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .product-card img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-    }
-
-    .product-card h3 {
-      margin: 15px 10px 5px;
-      font-size: 1.1rem;
-    }
-
-    .product-card p {
-      font-weight: bold;
-      color: var(--primary-color);
-    }
-
-    .buy-button {
-      display: inline-block;
-      margin: 10px auto 15px;
-      padding: 8px 14px;
-      background-color: var(--primary-color);
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-    }
-
-    .buy-button:hover {
-      background-color: var(--hover-color);
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      margin-top: 40px;
-      color: var(--text-color);
-    }
-  </style>
+  <link rel="stylesheet" href="/beranda.css">
 </head>
+
 <body>
 
 <header>
   <div class="logo">
-    <a href="https://thrifseken.com/">
-      <img src="/tsclothing.webp" alt="Logo" loading="lazy">
+    <a href="/" aria-label="Beranda Thrifseken">
+      <img src="/tsclothing.webp" alt="Logo Thrifseken" loading="lazy">
     </a>
   </div>
-  <input type="text" id="searchInput" placeholder="Cari produk..." aria-label="Cari produk">
-  <button onclick="toggleDarkMode()" class="toggle-darkmode" aria-label="Toggle Dark Mode">🌃</button>
+
+  <nav>
+    <a href="/">Beranda</a>
+    <a href="/produk/">Produk</a>
+    <a href="/tentang/">Tentang</a>
+    <a href="/kontak/">Kontak</a>
+    <button onclick="toggleDarkMode()" class="toggle-darkmode" aria-label="Ubah mode tampilan">🌓</button>
+  </nav>
 </header>
 
-<div class="main-title" data-aos="fade-up">
-  <h1>Katalog Produk Kami</h1>
-  <p>Temukan pilihan baju second berkualitas & hemat</p>
-</div>
+<main>
 
-<section class="products" data-aos="fade-up">
-  <div class="product-card">
-    <img src="https://i.postimg.cc/25btpm3Z/jaket-vintage.webp" alt="Jaket Vintage">
-    <h3>Jaket Vintage</h3>
-    <p>Rp 120.000</p>
-    <a class="buy-button" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Jaket%20Vintage" target="_blank">Belanja Sekarang</a>
-  </div>
-  <div class="product-card">
-    <img src="https://i.postimg.cc/ZnVHBD0M/celana-retro.webp" alt="Celana Retro">
-    <h3>Celana Retro</h3>
-    <p>Rp 90.000</p>
-    <a class="buy-button" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Celana%20Retro" target="_blank">Belanja Sekarang</a>
-  </div>
-  <div class="product-card">
-    <img src="https://i.postimg.cc/zGRw8fwd/Kemeja-kasual.webp" alt="Kemeja Kasual">
-    <h3>Kemeja Kasual</h3>
-    <p>Rp 70.000</p>
-    <a class="buy-button" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Kemeja%20Kasual" target="_blank">Belanja Sekarang</a>
-  </div>
-  <div class="product-card">
-    <img src="https://i.postimg.cc/kXyFZYC7/Blazer-wanita.webp" alt="Blazer Wanita">
-    <h3>Blazer Wanita</h3>
-    <p>Rp 150.000</p>
-    <a class="buy-button" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Blazer%20Wanita" target="_blank">Belanja Sekarang</a>
-  </div>
-  <div class="product-card">
-    <img src="https://i.postimg.cc/5ySvhyZz/kaos-band.webp" alt="Kaos Band">
-    <h3>Kaos Band</h3>
-    <p>Rp 65.000</p>
-    <a class="buy-button" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Kaos%20Band" target="_blank">Belanja Sekarang</a>
-  </div>
-  <div class="product-card">
-    <img src="https://i.postimg.cc/PqDLGNDT/Creewneck-polos.webp" alt="Crewneck Polos">
-    <h3>Crewneck Polos</h3>
-    <p>Rp 85.000</p>
-    <a class="buy-button" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Crewneck%20Polos" target="_blank">Belanja Sekarang</a>
-  </div>
-  <div class="product-card">
-    <img src="https://i.postimg.cc/RV0NSgtp/hoodie-streatwear.webp" alt="Hoodie Streetwear">
-    <h3>Hoodie Streetwear</h3>
-    <p>Rp 130.000</p>
-    <a class="buy-button" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Hoodie%20Streetwear" target="_blank">Belanja Sekarang</a>
-  </div>
-  <div class="product-card">
-    <img src="https://i.postimg.cc/d1BVvCVk/CElana-cargo.webp" alt="Celana Cargo">
-    <h3>Celana Cargo</h3>
-    <p>Rp 95.000</p>
-    <a class="buy-button" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Celana%20Cargo" target="_blank">Belanja Sekarang</a>
-  </div>
-  <div class="product-card">
-    <img src="https://i.postimg.cc/wvTdXGgG/Denim-jacket.webp" alt="Denim Jacket">
-    <h3>Denim Jacket</h3>
-    <p>Rp 140.000</p>
-    <a class="buy-button" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Denim%20Jacket" target="_blank">Belanja Sekarang</a>
-  </div>
-  <div class="product-card">
-    <img src="https://i.postimg.cc/054qSnFs/topi-vintage.webp" alt="Topi Vintage">
-    <h3>Topi Vintage</h3>
-    <p>Rp 50.000</p>
-    <a class="buy-button" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Topi%20Vintage" target="_blank">Belanja Sekarang</a>
+<section class="hero product-hero">
+  <p class="section-label">Katalog</p>
+  <h1>Katalog Produk Thrifseken</h1>
+  <p>Temukan pilihan baju second berkualitas, hemat, dan stylish. Mulai dari jaket vintage, celana retro, hoodie, sampai kemeja kasual.</p>
+
+  <div class="product-search">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" id="searchInput" placeholder="Cari produk thrift..." aria-label="Cari produk">
   </div>
 </section>
+
+<section class="product-list" id="produk">
+
+  <article class="catalog-card" data-product="jaket vintage">
+    <img src="/assets/images/produk/jaket-vintage.webp" alt="Jaket Vintage Second Thrifseken Medan" loading="lazy">
+    <div class="catalog-info">
+      <span class="product-tag">Outerwear</span>
+      <h2>Jaket Vintage</h2>
+      <p class="price">Rp 120.000</p>
+      <a class="btn-primary" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Jaket%20Vintage" target="_blank" rel="noopener noreferrer">Belanja Sekarang</a>
+    </div>
+  </article>
+
+  <article class="catalog-card" data-product="celana retro">
+    <img src="/assets/images/produk/celana-retro.webp" alt="Celana Retro Second Hand Thrifseken" loading="lazy">
+    <div class="catalog-info">
+      <span class="product-tag">Celana</span>
+      <h2>Celana Retro</h2>
+      <p class="price">Rp 90.000</p>
+      <a class="btn-primary" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Celana%20Retro" target="_blank" rel="noopener noreferrer">Belanja Sekarang</a>
+    </div>
+  </article>
+
+  <article class="catalog-card" data-product="kemeja kasual">
+    <img src="/assets/images/produk/kemeja-kasual.webp" alt="Kemeja Kasual Second Thrifseken Medan" loading="lazy">
+    <div class="catalog-info">
+      <span class="product-tag">Kemeja</span>
+      <h2>Kemeja Kasual</h2>
+      <p class="price">Rp 70.000</p>
+      <a class="btn-primary" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Kemeja%20Kasual" target="_blank" rel="noopener noreferrer">Belanja Sekarang</a>
+    </div>
+  </article>
+
+  <article class="catalog-card" data-product="blazer wanita">
+    <img src="/assets/images/produk/blazer-wanita.webp" alt="Blazer Wanita Second Thrifseken" loading="lazy">
+    <div class="catalog-info">
+      <span class="product-tag">Blazer</span>
+      <h2>Blazer Wanita</h2>
+      <p class="price">Rp 150.000</p>
+      <a class="btn-primary" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Blazer%20Wanita" target="_blank" rel="noopener noreferrer">Belanja Sekarang</a>
+    </div>
+  </article>
+
+  <article class="catalog-card" data-product="kaos band">
+    <img src="/assets/images/produk/kaos-band.webp" alt="Kaos Band Second Thrifseken" loading="lazy">
+    <div class="catalog-info">
+      <span class="product-tag">Kaos</span>
+      <h2>Kaos Band</h2>
+      <p class="price">Rp 65.000</p>
+      <a class="btn-primary" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Kaos%20Band" target="_blank" rel="noopener noreferrer">Belanja Sekarang</a>
+    </div>
+  </article>
+
+  <article class="catalog-card" data-product="crewneck polos">
+    <img src="/assets/images/produk/crewneck-polos.webp" alt="Crewneck Polos Second Thrifseken" loading="lazy">
+    <div class="catalog-info">
+      <span class="product-tag">Crewneck</span>
+      <h2>Crewneck Polos</h2>
+      <p class="price">Rp 85.000</p>
+      <a class="btn-primary" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Crewneck%20Polos" target="_blank" rel="noopener noreferrer">Belanja Sekarang</a>
+    </div>
+  </article>
+
+  <article class="catalog-card" data-product="hoodie streetwear">
+    <img src="/assets/images/produk/hoodie-streetwear.webp" alt="Hoodie Streetwear Second Thrifseken" loading="lazy">
+    <div class="catalog-info">
+      <span class="product-tag">Hoodie</span>
+      <h2>Hoodie Streetwear</h2>
+      <p class="price">Rp 130.000</p>
+      <a class="btn-primary" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Hoodie%20Streetwear" target="_blank" rel="noopener noreferrer">Belanja Sekarang</a>
+    </div>
+  </article>
+
+  <article class="catalog-card" data-product="celana cargo">
+    <img src="/assets/images/produk/celana-cargo.webp" alt="Celana Cargo Second Thrifseken" loading="lazy">
+    <div class="catalog-info">
+      <span class="product-tag">Celana</span>
+      <h2>Celana Cargo</h2>
+      <p class="price">Rp 95.000</p>
+      <a class="btn-primary" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Celana%20Cargo" target="_blank" rel="noopener noreferrer">Belanja Sekarang</a>
+    </div>
+  </article>
+
+  <article class="catalog-card" data-product="denim jacket">
+    <img src="/assets/images/produk/denim-jacket.webp" alt="Denim Jacket Second Thrifseken" loading="lazy">
+    <div class="catalog-info">
+      <span class="product-tag">Denim</span>
+      <h2>Denim Jacket</h2>
+      <p class="price">Rp 140.000</p>
+      <a class="btn-primary" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Denim%20Jacket" target="_blank" rel="noopener noreferrer">Belanja Sekarang</a>
+    </div>
+  </article>
+
+  <article class="catalog-card" data-product="topi vintage">
+    <img src="/assets/images/produk/topi-vintage.webp" alt="Topi Vintage Second Thrifseken" loading="lazy">
+    <div class="catalog-info">
+      <span class="product-tag">Aksesoris</span>
+      <h2>Topi Vintage</h2>
+      <p class="price">Rp 50.000</p>
+      <a class="btn-primary" href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20beli%20Topi%20Vintage" target="_blank" rel="noopener noreferrer">Belanja Sekarang</a>
+    </div>
+  </article>
+
+</section>
+
+<p id="emptyState" class="empty-state" hidden>Produk tidak ditemukan.</p>
+
+</main>
 
 <footer>
   &copy; 2025 Thrifseken. All Rights Reserved.
 </footer>
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="/beranda.js" defer></script>
+
 <script>
-  AOS.init();
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("searchInput");
+  const cards = document.querySelectorAll(".catalog-card");
+  const emptyState = document.getElementById("emptyState");
 
-  function toggleDarkMode() {
-    const root = document.documentElement;
-    const current = root.getAttribute('data-theme');
-    root.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
-  }
+  searchInput.addEventListener("input", function () {
+    const keyword = this.value.toLowerCase().trim();
+    let visibleCount = 0;
 
-  document.getElementById('searchInput').addEventListener('input', function () {
-    const keyword = this.value.toLowerCase();
-    const cards = document.querySelectorAll('.product-card');
-
-    cards.forEach(card => {
-      const title = card.querySelector('h3').textContent.toLowerCase();
-      card.style.display = title.includes(keyword) ? 'block' : 'none';
+    cards.forEach(function (card) {
+      const productName = card.dataset.product.toLowerCase();
+      const isMatch = productName.includes(keyword);
+      card.style.display = isMatch ? "block" : "none";
+      if (isMatch) visibleCount++;
     });
+
+    emptyState.hidden = visibleCount !== 0;
   });
+});
 </script>
 
 </body>
