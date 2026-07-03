@@ -2,25 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://thrifseken.com/</loc>
-    <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://thrifseken.com/produk/</loc>
-    <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://thrifseken.com/tentang/</loc>
-    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://thrifseken.com/kontak/</loc>
-    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
