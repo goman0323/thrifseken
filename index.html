@@ -21,7 +21,7 @@
 
 <meta property="og:title" content="Thrifseken – Toko Baju Second Medan Murah & Berkualitas">
 <meta property="og:description" content="Thrifseken menyediakan koleksi baju second terkurasi di Medan. Pilihan thrift, branded second, jaket vintage, celana retro, dan fashion hemat berkualitas.">
-<meta property="og:image" content="/assets/logo/tsclothing.webp">
+<meta property="og:image" content="https://thrifseken.com/assets/logo/tsclothing.webp">
 <meta property="og:url" content="https://thrifseken.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Thrifseken">
@@ -32,77 +32,123 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Thrifseken – Toko Baju Second Medan">
 <meta name="twitter:description" content="Temukan koleksi baju second, thrift, dan fashion branded second berkualitas di Thrifseken Medan.">
-<meta name="twitter:image" content="/assets/logo/tsclothing.webp">
+<meta name="twitter:image" content="https://thrifseken.com/assets/logo/tsclothing.webp">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ClothingStore",
-  "name": "Thrifseken",
-  "url": "https://thrifseken.com/",
-  "logo": "https://thrifseken.com/assets/logo/tsclothing.webp",
-  "image": "https://thrifseken.com/assets/logo/tsclothing.webp",
-  "description": "Thrifseken adalah toko baju second Medan yang menyediakan koleksi thrift, baju branded second, jaket vintage, celana retro, kemeja kasual, dan fashion second berkualitas.",
-  "telephone": "+62-812-3456-7890",
-  "email": "thrifseken@gmail.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Jl. Patriot Bedagai No. 10",
-    "addressLocality": "Serdang Bedagai",
-    "addressRegion": "Sumatera Utara",
-    "addressCountry": "ID"
-  },
-  "areaServed": "Medan, Sumatera Utara, Indonesia",
-  "priceRange": "Rp20.000 - Rp150.000",
-  "sameAs": [
-    "https://x.com/thrifseken",
-    "https://heylink.me/thrifseken/"
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Thrifseken",
-  "url": "https://thrifseken.com/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://thrifseken.com/?s={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Apakah Thrifseken menjual baju second?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ya, Thrifseken menyediakan baju second, thrift, dan fashion bekas berkualitas yang telah dikurasi sebelum ditampilkan di katalog."
-      }
+      "@type": ["Organization", "ClothingStore"],
+      "@id": "https://thrifseken.com/#organization",
+      "name": "Thrifseken",
+      "alternateName": [
+        "Thrifseken Medan",
+        "Thrifseken Official",
+        "Toko Baju Second Thrifseken"
+      ],
+      "url": "https://thrifseken.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://thrifseken.com/assets/logo/tsclothing.webp"
+      },
+      "image": "https://thrifseken.com/assets/logo/tsclothing.webp",
+      "description": "Thrifseken adalah toko baju second Medan yang menyediakan koleksi thrift, baju branded second, jaket vintage, celana retro, kemeja kasual, dan fashion second berkualitas.",
+      "telephone": "+62-812-3456-7890",
+      "email": "thrifseken@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Patriot Bedagai No. 10",
+        "addressLocality": "Serdang Bedagai",
+        "addressRegion": "Sumatera Utara",
+        "addressCountry": "ID"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Medan"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Sumatera Utara"
+        },
+        {
+          "@type": "Country",
+          "name": "Indonesia"
+        }
+      ],
+      "priceRange": "Rp20.000 - Rp150.000",
+      "sameAs": [
+        "https://x.com/thrifseken",
+        "https://instagram.com/thrifseken",
+        "https://heylink.me/thrifseken/"
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Apakah produk Thrifseken tersedia di Medan?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Thrifseken menargetkan pelanggan di Medan dan sekitarnya, namun pemesanan juga dapat dilakukan secara online sesuai ketersediaan produk dan layanan pengiriman."
-      }
+      "@type": "WebSite",
+      "@id": "https://thrifseken.com/#website",
+      "name": "Thrifseken",
+      "url": "https://thrifseken.com/",
+      "publisher": {
+        "@id": "https://thrifseken.com/#organization"
+      },
+      "inLanguage": "id-ID"
     },
     {
-      "@type": "Question",
-      "name": "Bagaimana cara order di Thrifseken?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kamu bisa memilih produk dari katalog, lalu menghubungi admin melalui WhatsApp untuk menanyakan stok, ukuran, harga, dan proses pembayaran."
-      }
+      "@type": "WebPage",
+      "@id": "https://thrifseken.com/#webpage",
+      "url": "https://thrifseken.com/",
+      "name": "Thrifseken – Toko Baju Second Medan Murah & Berkualitas",
+      "description": "Thrifseken adalah toko baju second Medan yang menyediakan koleksi thrift, jaket vintage, celana retro, kemeja kasual, dan fashion second berkualitas dengan harga terjangkau.",
+      "isPartOf": {
+        "@id": "https://thrifseken.com/#website"
+      },
+      "about": {
+        "@id": "https://thrifseken.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://thrifseken.com/assets/logo/tsclothing.webp"
+      },
+      "inLanguage": "id-ID"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thrifseken.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apakah Thrifseken menjual baju second?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ya, Thrifseken menyediakan baju second, thrift, dan fashion bekas berkualitas yang telah dikurasi sebelum ditampilkan di katalog."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah produk Thrifseken tersedia di Medan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Thrifseken menargetkan pelanggan di Medan dan sekitarnya, namun pemesanan juga dapat dilakukan secara online sesuai ketersediaan produk dan layanan pengiriman."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah kondisi barang masih bagus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Setiap produk memiliki kondisi yang bisa berbeda-beda. Kami menyarankan pelanggan mengecek foto, deskripsi, dan bertanya langsung kepada admin sebelum membeli."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bagaimana cara order di Thrifseken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kamu bisa memilih produk dari katalog, lalu menghubungi admin melalui WhatsApp untuk menanyakan stok, ukuran, harga, dan proses pembayaran."
+          }
+        }
+      ]
     }
   ]
 }
@@ -147,7 +193,7 @@
   <p>Thrifseken menghadirkan pilihan baju second, thrift, dan fashion branded second untuk kamu yang ingin tampil keren, hemat, dan tetap percaya diri.</p>
   <div class="hero-actions">
     <a href="/produk/" class="btn-primary">Belanja Sekarang</a>
-    <a href="#cara-belanja" class="btn-secondary">Cara Order</a>
+    <a href="#cara-order" class="btn-secondary">Cara Order</a>
   </div>
 </section>
 
@@ -188,7 +234,7 @@
   </div>
 
   <div class="product-card">
-    <img src="/assets/produk/Kemeja-kasual.webp" alt="Kemeja Kasual Second Thrifseken Medan" loading="lazy">
+    <img src="/assets/produk/kemeja-kasual.webp" alt="Kemeja Kasual Second Thrifseken Medan" loading="lazy">
     <div class="product-body">
       <span>Casual</span>
       <h3>Kemeja Kasual</h3>
